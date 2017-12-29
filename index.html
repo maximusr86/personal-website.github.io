@@ -1,23 +1,26 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<head>
+    <meta charset="utf-8">
+    <title>Example app</title>
+    <meta name="description" content="" />
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/gradients.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1> My First Website</h1>
+        <p class="first">This is my first website ever created with raw html and css code. Lets see how this goes.
+            I know this will be challenging and provide some obstacles but this is a great opportunity to learn.</p>
+        <p>Here's what I've learned so far:</p>
+        <ul>
+            <li>Html5<li>
+            <li>Css</li>
+            <li>Github</li>
+        </ul>
+    </div>
+    </body>
+    <footer>&copy MaxRand
+    </footer>
+</html>
